@@ -1,10 +1,7 @@
 # Sparkles Weather Dash
 
 ## Description
-
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
-
-Use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use `localStorage` to store any persistent data.
+This weather dashboard can be used to view the weather in various cities. It will store the last five cities you have searched for. Don't get caught in the rain unprepared, use this dash! 
 
 ## User Story
 
