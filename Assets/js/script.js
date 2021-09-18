@@ -139,8 +139,6 @@ var fiveDayForecast = function(forecast) {
 }
 
 var saveCity = function(city) {
-
-    // prevents duplicate city from being saved and moves it to end of array
     for (var i = 0; i < cityArr.length; i++) {
         if (city === cityArr[i]) {
             cityArr.splice(i, 1);
@@ -151,7 +149,6 @@ var saveCity = function(city) {
     localStorage.setItem('cities', JSON.stringify(cityArr));
 }
 
-// loads cities from local storage
 var loadCities = function() {
     cityArr = JSON.parse(localStorage.getItem('cities'));
 
@@ -159,7 +156,6 @@ var loadCities = function() {
         cityArr = [];
         return false;
     } else if (cityArr.length > 5) {
-        // saves only the five most recent cities
         cityArr.shift();
     }
 
@@ -189,8 +185,6 @@ var selectRecent = function(event) {
 
 loadCities();
 cityBtn.addEventListener('click', formHandler)
-
-// searches for city on ENTER key
 cityInput.addEventListener('keyup', function(event) {
     if (event.keyCode === 13) {
         cityBtn.click();
