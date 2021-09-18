@@ -1,4 +1,4 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Sparkles Weather Dash
 
 ## Description
 
